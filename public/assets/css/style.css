@@ -1,0 +1,1013 @@
+:root{
+  --white: rgb(255, 255, 255);
+  --light-blue: #0f92af;
+  --dark-blue: #006e94;
+  --shadow-gray: rgba(0, 0, 0, 15%);
+  --light-gray: #707070;
+  --medium-gray: #4d4d4d;
+  --dark-gray: #3e3e3e;
+  --font-bold: 'Proxima Nova Bold', Arial, Helvetica, sans-serif;
+  --font-semibold: 'Proxima Nova Semibold', Arial, Helvetica, sans-serif;
+  --font-regular: 'Proxima Nova Regular', Arial, Helvetica, sans-serif;
+}
+
+/* Universal Style for all pages */
+
+body{
+  max-width: 1600px;
+  min-width: 360px;
+  margin: auto !important;
+}
+
+body *{font-family: var(--font-regular);}
+
+/* Header style */
+
+.desktop .logo-topo{width: 350px;}
+
+#carousel-topo-desktop{
+  box-shadow: 0px -7px 5px 0px var(--shadow-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#carousel-topo-desktop .carousel-item img,
+#carousel-topo-desktop img{
+  width: 100%;
+  height: 512px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carousel-topo-desktop .carousel-indicators{
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: unset;
+  bottom: unset;
+  margin-bottom: unset;
+  margin-left: unset;
+  right: 0px;
+  gap: 7px;
+}
+
+#carousel-topo-desktop .carousel-indicators button{
+  width: 30px !important;
+  height: 30px !important;
+  opacity: 1;
+  background-color: transparent;
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_branca_nao_selecionada.svg");
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid transparent;
+}
+
+#carousel-topo-desktop .carousel-indicators button.active{
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_branca_selecionada.svg");
+}
+
+.desktop .icones{
+  gap: 12px;
+  margin-top: -25px;
+}
+
+.desktop .icone{
+  width: 30.16px;
+  height: 30.16px;
+}
+
+.desktop .icone, .mobile .icone{transition: all .1s ease-in-out;}
+
+.desktop .icone:hover,
+.mobile .icone:hover{
+  transform: scale(1.1);
+}
+
+.desktop .separador-topo{
+  height: 100%;
+  width: 1px;
+  background-color: var(--dark-gray);
+}
+
+#navbar-topo-desktop{
+  justify-content: space-between;
+  background-color: var(--dark-gray);
+  margin-top: -36.5px;
+  box-shadow: 0px 7px 5px 0px var(--shadow-gray);
+}
+
+#navbar-topo-desktop .navbar-nav{width: 90%;}
+
+#navbar-topo-desktop .nav-link{
+  color: var(--white);
+  background-color: var(--dark-gray);
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: var(--font-semibold);
+  padding: 20px;
+  text-wrap: nowrap;
+  word-break: keep-all;
+  word-wrap: unset;
+  height: 100%;
+}
+
+#navbar-topo-desktop .nav-link.active{font-family: var(--font-bold);}
+
+#navbar-topo-desktop .nav-link:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+#navbar-topo-desktop .nav-item{border-top: 4px solid transparent;}
+#navbar-topo-desktop .nav-item:hover{
+  border-top-color: var(--white);
+  transform: scaleX(1.1);
+}
+
+#navbar-topo-desktop a:hover,
+#navbar-topo-desktop a.active{color: var(--light-blue);}
+
+#navbar-topo-desktop .dropdown-menu{
+  background-color: var(--dark-gray);
+  border-radius: 0px;
+  border: none;
+  margin-top: 0px;
+  text-transform: uppercase;
+  font-family: var(--font-semibold); 
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#navbar-topo-desktop .dropdown-menu a{
+  color: var(--white);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-gray) !important;
+  padding-left: 8px;
+}
+
+#navbar-topo-desktop .dropdown-menu li:not(:first-of-type){border-top: 1px solid var(--white);}
+
+#navbar-topo-desktop .dropdown-menu a:hover::before,
+#navbar-topo-desktop .dropdown-menu a.active::before{
+  content: "";
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_seta_submenu_selecionado.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+#navbar-topo-desktop .dropdown-menu a::before{background-image: unset;}
+
+/* Universal style for the Main section of the pages */
+
+.desktop .titulo{
+  color: var(--dark-gray);
+  font-size: 48px;
+  font-family: var(--font-semibold); 
+  line-height: 40px;
+}
+
+.desktop .subtitulo{
+  font-size: 42px;
+  font-family: var(--font-semibold); 
+  color: var(--dark-gray);
+}
+
+.desktop .texto{
+  font-size: 24px;
+  color: var(--medium-gray);
+}
+
+.desktop .separador-grande,
+.mobile .separador-destaques-mobile{
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark-gray);
+}
+
+/* Style for both Highlights and News Carousels and See More button */
+
+.caixa img{
+  object-fit: cover;
+  object-position: center;
+}
+
+#carousel-destaques-desktop .carousel-item-end .botao-vermais,
+#carousel-destaques-desktop .carousel-item-next .botao-vermais,
+#carousel-noticias-desktop .carousel-item-end .botao-vermais,
+#carousel-noticias-desktop .carousel-item-next .botao-vermais{
+  opacity: 0;
+}
+
+#carousel-destaques-desktop:has(.carousel-item-next),
+#carousel-destaques-desktop:has(.carousel-item-end),
+#carousel-noticias-desktop:has(.carousel-item-next),
+#carousel-noticias-desktop:has(.carousel-item-end),
+#carousel-noticias-mobile:has(.carousel-item-next),
+#carousel-noticias-mobile:has(.carousel-item-end){
+  overflow: hidden;
+}
+
+#carousel-destaques-desktop .carousel-indicators,
+#carousel-noticias-desktop .carousel-indicators{
+  position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  width: 51%;
+  background-color: var(--white);
+}
+
+#carousel-destaques-desktop .carousel-indicators button,
+#carousel-noticias-desktop .carousel-indicators button{
+  width: 27px;
+  height: 27px;
+  opacity: 1;
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_azul_nao_selecionada.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+#carousel-destaques-desktop .carousel-indicators button.active,
+#carousel-noticias-desktop .carousel-indicators button.active{
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_cinza_selecionada.svg");
+}
+
+#carousel-destaques-desktop .carousel-item img{
+  width: 630px;
+  height: 439px;
+}
+
+#carousel-destaques-desktop .titulo{font-size: 33px;}
+
+#carousel-destaques-desktop .data{
+  font-size: 30px;
+  font-family: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+#carousel-destaques-desktop .texto{line-height: 25px;}
+#carousel-destaques-desktop > button{opacity: 1;}
+
+#carousel-destaques-desktop > button img{
+  width: 44.14px;
+  height: 80.97px;
+}
+
+#carousel-destaques-desktop .carousel-control-prev{transform: translateX(-170px);}
+#carousel-destaques-desktop .carousel-control-next{transform: translateX(170px);}
+#carousel-destaques-desktop .carousel-inner{overflow: visible;}
+
+#carousel-destaques-desktop .botao-vermais{
+  transform: translateY(55px) !important;
+  display: inline-block;
+}
+
+.botao-vermais{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: var(--font-semibold);
+  text-decoration: none;
+  padding: 5px 40px;
+}
+
+.botao-vermais:hover{background-color: var(--medium-gray);}
+
+#carousel-noticias-desktop .carousel-item img{
+  height: 571px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carousel-noticias-desktop .carousel-item .carousel-caption{
+  width: 635px;
+  height: 417px;
+  background-color: rgba(255, 255, 255, 82%);
+  padding: 30px 30px;
+  bottom: 0px;
+}
+
+#carousel-noticias-desktop .titulo{
+  font-size: 33px;
+  line-height: 35px;
+  font-family: var(--font-semibold);
+}
+
+#carousel-noticias-desktop .data{
+  font-size: 30px;
+  font-family: var(--font-semibold);
+  color:var(--dark-gray);
+}
+
+#carousel-noticias-desktop .texto{
+  font-size: 24px;
+  line-height: 28px;
+  font-family: var(--font-regular);
+  color:var(--medium-gray);
+}
+
+#carousel-noticias-desktop .botao-vermais{
+  transform: translateY(65px);
+  display: inline-block;
+}
+
+#carousel-noticias-desktop .carousel-inner{overflow: visible;}
+
+#carousel-noticias-desktop .carousel-indicators{
+  width: 100%;
+  background-color: transparent;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#carousel-noticias-desktop .carousel-indicators .caixa-botoes{width: 45%;}
+#carousel-noticias-desktop .carousel-indicators .caixa-botoes button{pointer-events: auto;}
+
+/* Footer Style */
+
+footer{
+  margin-bottom: 30px;
+  box-shadow: 0px -7px 5px 0px var(--shadow-gray);
+}
+
+footer .desktop{margin-top: 100px;}
+
+footer nav{
+  margin-top: 100px;
+  box-shadow: 0px 7px 5px 0px var(--shadow-gray);
+}
+
+footer.footer-empty{
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+footer.footer-empty .desktop{margin-top: 0px;}
+
+footer nav a{
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: var(--font-semibold);
+  padding: 20px;
+  text-decoration: none;
+  text-wrap: nowrap;
+  word-break: keep-all;
+  word-wrap: unset;
+}
+
+footer nav a.active{color: var(--dark-blue);}
+
+footer .altice{
+  width: 215px;
+  height: 69px;
+}
+
+footer .samsung{
+  width: 160px;
+  height: 90px;
+}
+
+footer .desktop .samsung{margin-right: 20px;}
+
+footer .dell{
+  width: 233.82px;
+  height: 70.54px;
+}
+
+footer .aruba{
+  width: 155.1px;
+  height: 76.61px;
+}
+
+footer .hp{
+  width: 76px;
+  height: 75px;
+}
+
+footer .separador-footer{
+  height: 3px;
+  background-color: var(--medium-gray);
+}
+
+footer .desktop .icones{margin-top: 0px;}
+
+footer .livro-reclamacoes{
+  width: 106.17px;
+  height: 42px;
+}
+
+footer .ralc{
+  width: 164.11px;
+  height: 37.22px;
+}
+
+footer .separador-icones-footer{
+  height: 30px !important;
+  width: 1px;
+  background-color: var(--dark-gray);
+  margin: 0px 5px 0px 5px;
+}
+
+footer .copyright a{
+  font-family: var(--font-regular);
+  font-size: 18px;
+  color: var(--medium-gray);
+  text-decoration: none;
+}
+
+footer .copyright a:hover{color: var(--dark-blue);}
+
+/* Mobile Style */
+
+/* Header style for Mobile */
+
+header .mobile .icones{margin-top: 10px;}
+header .mobile .navbar-toggler{z-index: 10;}
+#primeira-seccao-mobile{margin-top: -20px;}
+#nav-topo-mobile .navbar-toggler{border: none;}
+#nav-topo-mobile .navbar-nav{background-color: var(--dark-gray);}
+
+#nav-topo-mobile .nav-link{
+  font-family: var(--font-semibold);
+  font-size: 20px;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 2px 25px;
+  border-bottom: 1px solid var(--light-gray);
+  transition: all .1s ease-in-out;
+}
+
+#nav-topo-mobile .nav-link:hover{transform: scaleX(1.02);}
+
+#nav-topo-mobile .nav-link:focus,
+#nav-topo-mobile .nav-link:active{
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+#nav-topo-mobile .dropdown-menu{
+  border-radius: 0px;
+  border: none;
+  padding: 0px;
+}
+
+#nav-topo-mobile .dropdown-menu a{
+  font-family: var(--font-semibold);
+  font-size: 18px;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  padding: 2px 25px;
+  border-bottom: 1px solid var(--light-gray);
+  transition: all .1s ease-in-out;
+}
+
+#nav-topo-mobile .dropdown-menu a:hover{transform: scaleX(1.02);}
+#nav-topo-mobile .dropdown-menu a.active{background-color: var(--white);}
+
+#nav-topo-mobile .dropdown-menu a::before,
+#nav-topo-mobile .dropdown-menu a:hover::before,
+#nav-topo-mobile .dropdown-menu a.active::before{
+  content: "";
+  background-image: url("../images/icons/mobile/ta_comunicacoes_mobile_seta_submenu_selecionado.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  opacity: 1;
+  margin-right: 5px;
+}
+
+#nav-topo-mobile .dropdown-menu a::before{background-image: unset;}
+
+#carousel-topo-mobile .carousel-item img,
+#carousel-topo-mobile .banner_header_mobile img{
+  height: 265px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Main style for Mobile */
+
+.mobile .titulo{
+  color: var(--dark-gray);
+  font-size: 28.7px;
+  font-family: var(--font-semibold); 
+  line-height: 24px;
+}
+
+.mobile .texto{
+  font-size: 16px;
+  color: var(--medium-gray);
+  line-height: 18px;
+}
+
+.separador-mobile{
+  height: 1px;
+  background-color: var(--dark-gray);
+}
+
+/* Highlight Carousel Style for mobile */
+
+#carousel-destaques-mobile .titulo{
+  font-size: 26px;
+  line-height: 22.4px;
+}
+
+#carousel-destaques-mobile .data{
+  font-size: 25px;
+  font-family: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+#carousel-destaques-mobile .texto{
+  font-size: 16px;
+  color: var(--medium-gray);
+  line-height: 19.2px;
+}
+
+#carousel-destaques-mobile .botao-vermais{
+  color: var(--dark-blue);
+  background-color: var(--white);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 0px;
+}
+
+#carousel-destaques-mobile .carousel-indicators{
+  position: relative;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#carousel-destaques-mobile .carousel-indicators button{
+  width: 17.23px;
+  height: 17.23px;
+  opacity: 1;
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_azul_nao_selecionada.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+#carousel-destaques-mobile .carousel-indicators button.active{
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_cinza_selecionada.svg");
+}
+
+/* News Carousel style for Mobile */
+
+#carousel-noticias-mobile{height: 460px;}
+#carousel-noticias-mobile .carousel-inner{overflow: visible;}
+
+#carousel-noticias-mobile .carousel-item img{
+  height: 235px;
+  object-fit: cover;
+  object-position: center;
+}
+
+#carousel-noticias-mobile .carousel-item .carousel-caption{
+  background-color: rgba(255, 255, 255, 82%);
+  bottom: 0px;
+  top: 117.3px;
+  left: 35px;
+  right: 35px;
+}
+
+#carousel-noticias-mobile .carousel-item .carousel-caption .titulo{
+  font-size: 24px;
+  font-family: var(--font-semibold);
+  color: var(--dark-gray);
+  line-height: 22.4px;
+}
+
+#carousel-noticias-mobile .carousel-item .carousel-caption .data{
+  font-size: 25px;
+  font-family: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+#carousel-noticias-mobile .carousel-item .carousel-caption .texto{
+  font-size: 16px;
+  font-family: var(--font-regular);
+  color: var(--dark-gray);
+  line-height: 19.2px;
+}
+
+#carousel-noticias-mobile .carousel-item .carousel-caption .texto p{margin-bottom: 5px;}
+
+#carousel-noticias-mobile .botao-vermais{
+  background-color: transparent;
+  color: var(--dark-blue);
+  padding: 5px 0px;
+  font-size: 16px;
+}
+
+#carousel-noticias-mobile .carousel-indicators{margin-right: 10%;}
+
+#carousel-noticias-mobile .carousel-indicators button{
+  width: 17.23px;
+  height: 17.23px;
+  opacity: 1;
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_azul_nao_selecionada.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+#carousel-noticias-mobile .carousel-indicators button.active{
+  background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_bola_cinza_selecionada.svg");
+}
+
+.separador-mobile-grande{
+  height: 1px;
+  background-color: var(--medium-gray);
+}
+
+/* Footer style for Mobile */
+
+.mobile .altice{
+  width: 75px;
+  height: 27px;
+}
+
+.mobile .dell{
+  width: 87px;
+  height: 25.27px;
+}
+
+.mobile .samsung{
+  width: 80px;
+  height: 25px;
+}
+
+.mobile .aruba{
+  width: 70px;
+  height: 35px;
+}
+
+.mobile .hp{
+  width: 38px;
+  height: 38px;
+}
+
+.mobile .livro-reclamacoes{
+  width: 63px;
+  height: 24px;
+}
+
+.mobile .ralc{
+  width: 105px;
+  height: 26px;
+}
+
+.mobile .copyright a{
+  font-family: var(--font-regular);
+  font-size: 12.8px;
+  color: var(--medium-gray);
+}
+
+/* Universal style for the remaining pages */
+
+.text-justify{text-align: justify;}
+
+.desktop .titulo-secundario{
+  font-size: 40px;
+  font-family: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+.mobile .titulo-secundario{
+  font-size: 40px;
+  font-family: var(--font-semibold);
+  color: var(--dark-gray);
+}
+
+/* Style for both Highlights and News and Events pages */
+
+.desktop .caixa-branca{
+  margin-top: -55px;
+  background-color: var(--white);
+}
+
+.desktop .caixa-branca .titulo{
+  font-family: var(--font-semibold);
+  font-size: 33px;
+  color: var(--dark-gray);
+}
+
+.desktop .caixa-branca .data{
+  font-family: var(--font-semibold);
+  font-size: 30px;
+  color: var(--dark-gray);
+}
+
+.desktop .caixa-branca .texto{
+  font-family: var(--font-regular);
+  font-size: 24px;
+  line-height: 27.2px;
+  color: var(--medium-gray);
+}
+
+.desktop .caixa-branca .botao-vermais{padding: 5px 30px;}
+
+.paginacao a{
+  width: 29px;
+  height: 29px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+}
+
+.paginacao .voltar{background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_seta_voltar_paginas.svg");}
+.paginacao .avancar{background-image: url("../images/icons/desktop/ta_comunicacoes_desktop_seta_passar_paginas.svg");}
+
+.paginacao .numero{
+  border: 1px solid #797979;
+  color: var(--dark-gray);
+  font-family: var(--font-semibold);
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.paginacao .numero.active,
+.paginacao .numero:hover{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-color: var(--dark-blue);
+}
+
+.mobile .caixa-branca{
+  margin-top: -40px;
+  background-color: var(--white);
+}
+
+.mobile .caixa-branca .titulo{font-size: 24px;}
+
+.mobile .caixa-branca .data{
+  font-family: var(--font-semibold);
+  font-size: 21px;
+  color: var(--dark-gray);
+}
+
+.mobile .caixa-branca .botao-vermais{
+  font-size: 14px;
+  padding: 4px 25px;
+}
+
+.mobile .paginacao a{
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+}
+
+/* Styles for Partners page */
+
+.icone_pagina_parceiros{
+  width: 430px;
+  height: 165px;
+}
+
+.icone_pagina_parceiros_footer{
+  width: 270px;
+  height: 85px;
+}
+
+/* Desktop style for Contact page */
+
+.texto-escuro-contactos, .texto-morada{
+  color: var(--dark-gray);
+  font-family: var(--font-semibold);
+  font-size: 24px;
+}
+
+.texto-escuro-contactos{text-transform: uppercase;}
+.texto-morada{line-height: 25.5px;}
+
+.texto-contactos{
+  color: #505050;
+  font-family: var(--font-regular);
+  font-size: 23px;
+}
+
+.texto-escuro-contactos .bi{
+  font-size: 20px;
+  margin-right: 7px;
+}
+
+.form-contactos label{
+  font-family: var(--font-semibold);
+  text-transform: uppercase;
+  color: var(--dark-gray);
+  font-size: 22px;
+}
+
+.form-contactos input{
+  border: 1px solid var(--light-gray);
+  height: 36px;
+  padding-left: 10px;
+}
+
+.form-contactos input::placeholder,
+.form-contactos textarea::placeholder
+{color: var(--dark-gray);}
+
+.form-contactos .preenchimento-obrigatorio{
+  color: #7e7f80;
+  font-size: 17px;
+}
+
+.form-contactos .texto-copia-email{
+  text-transform: none;
+  color: #7e7f80;
+  font-size: 17px;
+}
+
+.form-contactos .copia-email{
+  border-radius: 0px;
+  margin-right: 5px;
+}
+
+.form-contactos textarea{
+  height: 173px;
+  padding: 5px 0px 0px 10px;
+}
+
+.form-contactos .send-btn{
+  font-family: var(--font-semibold);
+  background-color: var(--dark-blue);
+  font-size: 18px;
+  width: 100px;
+  height: 40.14px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  border: none;
+  color: var(--white);
+  text-align: center;
+  padding-left: 5px;
+}
+
+input:focus, textarea:focus{outline-color: var(--light-blue);}
+
+.nav-contactos-desktop{
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.caixa-recaptcha-desktop{
+  transform: scale(0.75);
+  transform-origin: right; 
+}
+
+/* Mobile style for Contact page */
+
+.caixa-recaptcha-mobile{
+  transform: scale(0.50);
+  transform-origin: left; 
+}
+
+.desktop{display: block;}
+.mobile{display: none;}
+
+/* Media Queries */
+
+@media all and (width <= 1400px){
+  #navbar-topo-desktop .navbar-nav{width: 100% !important;}
+
+  #carousel-destaques-desktop .carousel-item img{
+    width: 500px;
+    height: auto;
+  }
+
+  #carousel-destaques-desktop .carousel-control-prev{transform: translateX(-140px);}
+  #carousel-destaques-desktop .carousel-control-next{transform: translateX(140px);}
+
+  #carousel-destaques-desktop .titulo{font-size: 28px;}
+  #carousel-destaques-desktop .data{font-size: 26px;}
+
+  #carousel-destaques-desktop .texto{
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .caixa-recaptcha-desktop{
+    transform: scale(0.68);
+    transform-origin: right; 
+  }
+
+  .mobile .form-contactos .texto-copia-email,
+  .mobile .form-contactos .preenchimento-obrigatorio{
+    font-size: 15px;
+  }
+}
+
+@media all and (width <= 1200px){
+  #navbar-topo-desktop .nav-link{
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  #carousel-destaques-desktop .carousel-item img{width: 350px;}
+
+  #carousel-destaques-desktop .carousel-indicators button,
+  #carousel-noticias-desktop .carousel-indicators button{
+    width: 20px;
+    height: 20px;
+  }
+
+  #carousel-destaques-desktop .carousel-control-prev{transform: translateX(-120px);}
+  #carousel-destaques-desktop .carousel-control-next{transform: translateX(120px);}
+  #carousel-destaques-desktop .carousel-indicators{width: 45%;}
+
+  footer nav a{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  footer .altice{width: 130px;}
+
+  footer .samsung{
+    width: 140px;
+    height: auto;
+  }
+
+  footer .dell{
+    width: 160px;
+    height: auto;
+  }
+
+  footer .aruba{
+    width: 100px;
+    height: auto;
+  }
+
+  footer .hp{
+    width: 45px;
+    height: auto;
+  }
+
+  .mobile .form-contactos .texto-copia-email,
+  .mobile .form-contactos .preenchimento-obrigatorio{
+    font-size: 14px;
+  }
+  
+}
+
+@media all and (width <= 992px){
+  .desktop{display: none;}
+  .mobile{display: block;}
+
+  .logo-topo{width: 190px;}
+
+  #carousel-noticias-mobile .carousel-item .carousel-caption{
+    top: 140px;
+  }
+
+  .mobile .icone{
+    width: 30.16px;
+    height: 30.16px;
+  }
+  .mobile .separador-topo{
+    height: 25px;
+    width: 1px;
+    background-color: var(--dark-gray);
+  }
+
+  .form-contactos .send-btn{
+    width: 90px;
+    height: 29px;
+  }
+}
+
+@media all and (width <= 576px){
+  .logo-topo{width: 160px;}
+
+  .mobile .icone{
+    width: 25px;
+    height: 25px;
+  }
+
+  footer .mobile .icone{
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile  .titulo-secundario{font-size: 34px;}
+  #carousel-noticias-mobile .carousel-item .carousel-caption{top: 117.3px;}
+}
