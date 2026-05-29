@@ -25,6 +25,13 @@ function select_sql_unique($sql, $parameters = []){
 }
 
 function idu_sql($sql, $parameters = []){
+  if(
+    isset($_SESSION["user"]["login"])
+    &&
+    $_SESSION["user"]["login"] === "demo"
+  ){
+    return;
+  }
   global $pdo;
   $query = $pdo->prepare($sql);
   $query->execute($parameters);
