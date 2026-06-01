@@ -60,6 +60,7 @@ Demo credentials:
 Login: demo
 Password: demo123
 
+⚠️ Demo mode is enabled for evaluation purposes. Changes are not persisted to the live database.
 ⚠️ Demo data may be periodically reset.
 
 ## 💡 What I Learned

@@ -163,6 +163,9 @@ $contact = get_contact();
                   <li class="nav-item">
                     <a class="nav-link <?= ($current_menu == "contact") ? "active" : "" ?>" aria-current="page" href="contact.php">Contact</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="backoffice/index.php">Admin</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -258,7 +261,9 @@ $contact = get_contact();
                   <li class="nav-item">
                     <a class="nav-link <?= ($current_menu == "contact") ? "active" : "" ?>" aria-current="page" href="contact.php">Contact</a>
                   </li>
-
+                  <li class="nav-item">
+                    <a class="nav-link" href="backoffice/index.php">Admin</a>
+                  </li>
                 </ul>
               </div>
             </div>

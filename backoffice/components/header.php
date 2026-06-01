@@ -16,8 +16,8 @@ verify_logged_user();
   <link rel="icon" href="../public/assets/images/icons/desktop/bluewave_favicon.png">
   <link rel="stylesheet" href="../public/assets/css/fonts/fonts.css">
   <link rel="stylesheet" href="css/backoffice.css">
-  <script src="/bluewave/public/assets/js/tinymce/tinymce.min.js"></script>
-  <script src="/bluewave/public/assets/js/tinymce/tinymce-init.js"></script>
+  <script src="/public/assets/js/tinymce/tinymce.min.js"></script>
+  <script src="/public/assets/js/tinymce/tinymce-init.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
